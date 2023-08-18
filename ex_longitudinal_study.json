@@ -1,0 +1,198 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "schema": "http://schema.org/",
+        "inspire": "http://aphrc-lshtm-inspire.org/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "conformsTo": "dcterms:conformsTo",
+        "name": "schema:name",
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "about": "schema:about",
+        "provider": "schema:provider",
+        "dateModified": "schema:dateModified",
+        "license": "schema:license",
+        "creator": "schema:Creator",
+        "maintainer": "schema:Maintainer",
+        "organization": "schema:Organization",
+        "person": "schema:Person",
+        "version": "schema:version",
+        "datePublished": "schema:datePublished",
+        "encodingFormat": "schema:encodingFormt",
+        "url": "schema:url",
+        "email": "schema:email",
+        "temporalCoverage": "schema:temporalCoverage",
+        "spatialCoverage": "schema:spatialCoverage",
+        "itemListElement": "schema:itemListElement",
+        "item": "schema:item",
+        "target_audience": "inspire:target_audience",
+        "precondition": "inspire:precondition",
+        "postcondition": "inspire:postcondition",
+        "quex": "inspire:quex",
+        "vocabulary": "inspire:vocabulary",
+        "vocabulary_concept_id": "inspire:vocabulary_concept_id",
+        "vocabulary_concept_name": "inspire:vocabulary_concept_name",
+        "possible_answers": {
+            "@id": "inspire:possible_answers",
+            "@container": "@list"
+        },
+        "answer_type": {
+            "@id": "inspire:answer_type",
+            "@container": "@list"
+        },
+        "longitudinalstudy": {
+            "@id": "inspire:longitudinalstudy",
+            "@container": "@list"
+        },
+        "survey_level_info": {
+            "@id": "inspire:survey_level_info",
+            "@container": ["@id", "@set"]
+        },
+        "ask": {
+            "@id": "inspire:ask",
+            "@container": ["@id", "@set"]
+        },
+        "ex": "http://example.com/inspire/",
+        "geojson": "https://purl.org/geojson/vocab#",
+        "Feature": "geojson:Feature",
+        "FeatureCollection": "geojson:FeatureCollection",
+        "GeometryCollection": "geojson:GeometryCollection",
+        "LineString": "geojson:LineString",
+        "MultiLineString": "geojson:MultiLineString",
+        "MultiPoint": "geojson:MultiPoint",
+        "MultiPolygon": "geojson:MultiPolygon",
+        "Point": "geojson:Point",
+        "Polygon": "geojson:Polygon",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
+        "features": {
+            "@container": "@set",
+            "@id": "geojson:features"
+        },
+        "geometry": "geojson:geometry",
+        "id": "@id",
+        "properties": "geojson:properties",
+        "type": "@type"
+    },
+    "ex:round-1": {
+        "@type": "schema:ItemList",
+        "name": "Round 1",
+        "itemListElement": [
+        {
+            "@type": "schema:ListItem",
+            "name": "ex:q1",
+            "item": {
+                "@id": "http://doi.org/10.5555/12345678",
+                "@type": "inspire:quex"      
+            }
+        },
+        {
+            "@type": "schema:ListItem",
+            "name": "ex:q2",   
+            "item": {
+                "@id": "http://doi.org/10.5555/12345678",
+                "@type": "inspire:quex"
+            }
+        }
+    ]},
+    "ex:round-2": {
+        "@type": "schema:ItemList",
+        "name": "Round 2",
+        "itemListElement": [
+        {
+            "@type": "schema:ListItem",
+            "name": "ex:q1",
+            "item": {
+                "@id": "http://doi.org/10.5555/12345678",
+                "@type": "inspire:quex"      
+            }
+        },
+        {
+            "@type": "schema:ListItem",
+            "name": "ex:q2",   
+            "item": {
+                "@id": "http://doi.org/10.5555/12345678",
+                "@type": "inspire:quex"
+            }
+        }
+    ]},
+    "ex:q1": {
+        "survey_level_info": {
+            "http://doi.org/10.5555/23456780": [{
+            "conformsTo": "http://codata.org/worldfair/cdif-metadataSpec/discovery",
+            "provider": {
+                "@type": "Organization",
+                "name": "A research organization",
+                "email": "metadata@researchorganization.org"    
+            },
+            "about": {
+                "name": "Questionnaire on the Use of Social Media",
+                "description": "This questionnaire asks about your use of social media.",
+                "target_audience": "People who use social media",
+                "encodingFormat": "text/plain",
+                "creator": "nil:unknown",
+                "maintainer": {
+                    "@type": "Person",
+                    "@id": "https://orcid.org/identifierForMetadataProducer",
+                    "name": "metadata creator-editor-steward name",
+                    "description": "person responsible for the metadata"
+                },
+                "temporalCoverage": "<nil>",
+                "geometry": {"type": "Polygon", "coordinates": [0.0, 0.0, 0.0, 0.0]},
+                "precondition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "postcondition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+        }]},
+        "ask": {
+            "http://doi.org/10.5555/23456789": [{
+            "name": "How often do you use social media?",
+            "about": {
+                "vocabulary": "https://icd.who.int",
+                "version": "Jan 2022",
+                "vocabulary_concept_id": "http://id.who.int/icd/entity/334423054",
+                "vocabulary_concept_name": "Mental, behavioural or neurodevelopmental disorders"
+            },
+            "answer_type": "select",
+            "possible_answers": ["Once a day", "A few times a day", "Several times a day", "Every hour"]
+            }],
+            "http://doi.org/10.5555/23456780": [{
+            "name": "Which social media platforms do you use",
+            "about": "<nil>",
+            "answer_type": "multiselect",
+            "possible_answers": ["Facebook", "Twitter", "LinkedIn", "Instagram", "Other"]
+            }]
+        }
+    },
+    "ex:q2": {
+        "survey_level_info": {
+            "http://doi.org/10.5555/23456780": [{
+            "name": "Questionnaire on the Use of Social Media",
+            "description": "This questionnaire asks about your use of social media.",
+            "target_audience": "People who use social media",
+            "temporalCoverage": "<nil>",
+            "geometry": {"type": "Polygon", "coordinates": [0.0, 0.0, 0.0, 0.0]},
+            "precondition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "postcondition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}]
+          },
+        "ask": {
+            "http://doi.org/10.5555/23456789": [{
+            "name": "How often do you use social media?",
+            "about": "<nil>",
+            "answer_type": "select",
+            "possible_answers": ["Once a day", "A few times a day", "Several times a day", "Every hour"]
+            }],
+            "http://doi.org/10.5555/23456780": [{
+            "name": "Which social media platforms do you use",
+            "about": "<nil>",
+            "answer_type": "multiselect",
+            "possible_answers": ["Facebook", "Twitter", "LinkedIn", "Instagram", "Other"]
+            }]
+        }
+    }
+}
