@@ -1,0 +1,26 @@
+{
+    "@context": ["http://schema.org",
+    {
+        "inspire": "http://aphrc-lshtm-inspire.org/",
+        "Questionnaire": "inspire:Questionnaire",
+        "answer_type": "inspire:answer_type"
+    }],
+    "@type": "Questionnaire",
+    "name": "Questionnaire on the Use of Social Media",
+    "description": "This questionnaire asks about your use of social media.",
+    "mainEntity":[
+        {
+        "@type": "Question",
+        "name": "How often do you use social media?",
+        "answer_type": "select",
+        "suggestedAnswer": ["Once a day", "A few times a day", "Several times a day", "Every hour"]
+        },
+        {
+        "@type": "Question",
+        "name": "Which social media platforms do you use?",
+        "answer_type": "multiselect",
+        "suggestedAnswer": ["Facebook", "Twitter", "LinkedIn", "Instagram", "Other"]
+        }
+    ],
+    "audience": "People who use social media"
+}
