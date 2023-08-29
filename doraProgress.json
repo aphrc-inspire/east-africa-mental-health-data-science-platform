@@ -20,7 +20,7 @@
 "creator" : ["basis r","GAD-7", "PHQ9"],
 "inLanguage" :["english", "swahili"],
 "encodingFormat": "text/plain",
-"isAccessibleForFree" : " boolean",
+"isAccessibleForFree" : true,
 "timeRequired":"duration ",
 "size" : "number of pages",
 "typicalAgeRange":"text",
@@ -56,6 +56,7 @@
     "about": "<nil>",
     "answer_type": "multiselect",
     "possible_answers": ["Facebook", "Twitter", "LinkedIn", "Instagram", "Other"],
+    "inLanguage" :["english", "swahili"],
     "answerCount": "integer",
     "downvoteCount":"integer",
     "upvoteCount" : "integer"
