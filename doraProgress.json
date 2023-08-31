@@ -1,0 +1,66 @@
+{
+"@context": ["http://schema.org",
+{
+"inspire": "http://aphrc-lshtm-inspire.org/",
+"Questionnaire": "inspire:Questionnaire",
+"answer_type": "inspire:answer_type",
+"target_audience": "inspire:target_audience",
+"vocabulary": "inspire:vocabulary",
+"vocabulary_concept_id": "inspire:vocabulary_concept_id",
+"vocabulary_concept_name": "inspire:vocabulary_concept_name",
+"possible_answers": {
+"@id": "inspire:possible_answers",
+"@container": "@list"
+}
+}],
+"@type": "Questionnaire",
+"name": "Questionnaire on the Use of Social Media",
+"description": "This questionnaire asks about your use of social media.",
+"target_audience": "People who use social media",
+"creator" : ["basis r","GAD-7", "PHQ9"],
+"inLanguage" :["english", "swahili"],
+"encodingFormat": "text/plain",
+"isAccessibleForFree" : true,
+"timeRequired":"duration ",
+"size" : "number of pages",
+"typicalAgeRange":"text",
+"maintainer":
+ {
+   "@type": "Person",
+   "@id": "https://orcid.org/identifierForMetadataProducer",
+   "name": "metadata creator-editor-steward name",
+   "description": "person responsible for the metadata"
+       
+}, 
+
+"ask":[
+{
+         "@type": "Question",
+         "name": "How often do you use social media?",
+         "about": {
+            "vocabulary": "https://icd.who.int",
+            "vocabulary_concept_id": "http://id.who.in",
+            "vocabulary_concept_name": "Mental, behavioural or neurodevelopmental disorders"
+              },
+        "answer_type": "select",
+        "suggestedAnswer": ["Once a day", "A few times a day", "Several times a day", "Every hour"],
+        "inLanguage" :["english", "swahili"],
+        "answerCount": "integer",
+        "downvoteCount":"integer",
+        "upvoteCount" : "integer"
+       
+},
+{
+    "@type": "Question",
+    "name": "Which social media platforms do you use?",
+    "about": "<nil>",
+    "answer_type": "multiselect",
+    "possible_answers": ["Facebook", "Twitter", "LinkedIn", "Instagram", "Other"],
+    "inLanguage" :["english", "swahili"],
+    "answerCount": "integer",
+    "downvoteCount":"integer",
+    "upvoteCount" : "integer"
+}
+]
+}
+
