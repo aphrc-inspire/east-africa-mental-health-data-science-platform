@@ -1,0 +1,451 @@
+{
+    "@context": [
+        "http://schema.org",
+        {
+            "INSPIRE-MH": "http://aphrc-lshtm-inspire.org/mh/",
+            "DDI-Lifecycle": "https://ddialliance.org/Specification/DDI-Lifecycle/",
+            "DataCollectionPlan": "INSPIRE-MH:DataCollectionPlan",
+            "StudyGroup": "DDI-Lifecycle:Group",
+            "studyGroupTypes": {
+                "@id": "DDI-Lifecycle:studyGroupTypes",
+                "@container": "@list"
+            },
+            "studyGroupTypeSelection": "INSPIRE-MH:studyGroupTypeSelection",
+            "StudyUnit": "DDI-Lifecycle:StudyUnit",
+            "DataCollection": "DDI-Lifecycle:DataCollection",
+            "Instrument": "DDI-Lifecycle:Instrument",
+            "Questionnaire": "inspire:Questionnaire",
+            "answer_type": "inspire:answer_type",
+            "target_audience": "inspire:target_audience",
+            "keywords": "inspire:keywords",
+            "panelModel": "inspire:panelModel",
+            "property": "inspire:property",
+            "observation": "inspire:observation",
+            "time": "inspire:time",
+            "DOI":"inspire:DOI",
+            "DOIRegistry": "inspire:DOIRegistry",
+            "DOIValue": "inspire:DOIValue",
+            "valueAsNumber": "inspire:valueAsNumber",
+            "valueAsString":"inspire:valueAsString",
+            "vocabulary": "inspire:vocabulary",
+            "valueAsConcept":"inspire:valueAsConcept",
+            "vocabulary_concept_id": "inspire:vocabulary_concept_id",
+            "vocabulary_concept_name": "inspire:vocabulary_concept_name",
+            "possible_answers": {
+                "@id": "inspire:possible_answers",
+                "@container": "@list"
+            },
+            "ex": "http://example.com/inspire-mh/"
+        }
+    ],
+    
+    "@type": "DataCollectionPlan",
+    "myPLan": {
+        "@type": "ItemList",
+        "@id": "ex:studygroup",
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "sdPublisher": {
+                "@type": "Organization",
+                "@id": "ex:11",
+                "name": "APHRC"
+            },
+            "about" : {
+                "name":"",
+                "description":"",
+                "abstract":"",
+                "citation":"",
+                "keywords":[
+                    "single panel surveyed multiple times",
+                    "single panel surveyed once",
+                    "rolling panel (multiple interviews limited duration)",
+                    "different panel each survey"
+                ],
+                "panelModel":[
+                    "Single Occurance",
+                    "Multiple Occurance:Regular Occurance:Limited time ",
+                    "Multiple Occurance:Irregular Occurance:Continuing",
+                    "Multiple Occurance:Irregular Occurance: Limited time"
+                ],
+                "waveModel":""
+            },
+            "spatialCoverage": [
+                {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressRegion": "Kenya"
+                    }
+                },
+                {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressRegion": "Uganda"
+                    }
+                } 
+            ],
+            "temporalCoverage" :{
+                "@type": "dateTime"
+            },
+            "identifier" :{
+                "@type": "text",
+                "DOIRegistry": "",
+                "DOIValue": ""
+            },
+            "URL":{
+            "lastAccessed":""
+            }
+        },
+            
+        "itemListElement": [
+            {
+                "@type": "ItemList",
+                "@id": "ex:studyunit1",
+                "subjectOf": {
+                    "@type": "Event",
+                    "about":{
+                        "name":"",
+                        "description":[
+                              "Single",
+                              "Multiple: Integrated set of 2 or more instruments used for different subgroups",
+                              "Multiple: Base with Topical changes"
+                            ],
+                        "instrumentModel":""
+                     },
+                     "location":"",
+                     "startDate":"",
+                     "endDate":"",
+                     "attendee":"",
+                     "director":""
+                    },
+                "itemListElement": [
+                    {
+                        "@type": "ItemList",
+                        "@id": "ex:instrument1",
+                        "subjectOf": {
+                            "@type": "CreativeWork",
+                            "accountablePerson": "www",
+                            "about":{
+                                   "name":"",
+                                   "description":"",
+                                   "accessibility":""
+                                 },
+                            "position":"",
+                            "license":"",
+                            "temporalCoverage":"",
+                            "version":"",
+                            "inLanguage":"",
+                            "audience":"",
+                            "conditionsOfAccess":"",
+                            "sameAs":"",
+                            "identifier":{
+                                   "@type":"text",
+                                   "DOIRegistry":"",
+                                   "DOIValue":""
+                            },
+                            "URL":{
+                                "lastAccessed":""
+                                }
+                        },
+                        "itemListElement":[
+                            {
+                                "@type": "ListItem",
+                                "item": {
+                                    "@type": "schema:Question",
+                                    "@id": "ex:question1",
+                                    "about":{
+                                        "name":"",
+                                        "description":"",
+                                        "question":{
+                                                "@type":"itemList",
+                                                "text":"",
+                                                "language":""
+                                        },
+                                
+                                        "accessibility":"",
+                                        "keywords":"",
+                                        "property":{
+                                            "@type":"ListItem",
+                                                "concept":"",
+                                                "vocabulary":""
+                                        }
+                                             },
+                                    "position":"",
+                                    "observation":{
+                                            "@type":"ItemList",
+                                            "time":{
+                                            "@type":"ListItem",
+                                            
+                                              "resultTime":"",
+                                               "phenomenonTime":""
+                                            },
+                                            "result":{
+                                                "@type":"ItemList",
+                                                "valueAsNumber":{
+                                                    "@type":"ItemList",
+                                                    "unitOfMeasurement":"",
+                                                    "vocabulary":"",
+                                                    "number":""
+                                                      },
+                                                "valueAsString":{
+                                                    "@type":"ItemList",
+                                                        "language":"",
+                                                        "string":""
+                                                },
+                                                "valueAsConcept":{
+                                                    "@type":"ItemList",
+                                                        "concept":"",
+                                                        "vocabulary":""   
+                                                }
+                                                    }  
+                                                    },
+                                    "conditionsOfAccess":"",
+                                    "sameAs":"",
+                                    "identifier":{
+                                        "@type":"text",
+                                        "DOI":{
+                                             "checkSum":""
+                                               }
+                                            },
+                                    "URL":{
+                                       "lastAccessed":""
+                                         }
+                                        }
+                            },
+                            {
+                                "@type": "ListItem",
+                                "item": {
+                                    "@type": "schema:Question",
+                                    "@id": "ex:question2",
+                                    "about":{
+                                        "name":"",
+                                        "description":"",
+                                        "@type":"ListItem",
+                                        "question":{
+                                                "@type":"itemList",
+                                                "text":"",
+                                                "language":""
+                                        },
+                                
+                                        "accessibility":"",
+                                        "keywords":"",
+                                        "property":{
+                                            "@type":"ListItem",
+                                            "concept":"",
+                                            "vocabulary":""
+                                        }
+                                             },
+                                    "position":"",
+                                    "observation":{
+                                            "@type":"ItemList",
+                                            "time":{
+                                            "@type":"ListItem",
+                                            
+                                              "resultTime":"",
+                                               "phenomenonTime":""
+                                            },
+                                            "result":{
+                                                "@type":"ItemList",
+                                                "valueAsNumber":{
+                                                    "@type":"ItemList",
+                                                    "unitOfMeasurement":"",
+                                                    "vocabulary":"",
+                                                    "number":""
+                                                      },
+                                                "valueAsString":{
+                                                    "@type":"ItemList",
+                                                        "language":"",
+                                                        "string":""
+                                                },
+                                                "valueAsConcept":{
+                                                    "@type":"ItemList",
+                                                        "concept":"",
+                                                        "vocabulary":""   
+                                                }
+                                                    }  
+                                                    },
+                                    "conditionsOfAccess":"",
+                                    "sameAs":"",
+                                    "identifier":{
+                                        "@type":"text",
+                                        "DOI":{
+                                             "checkSum":""
+                                               }
+                                            },
+                                    "URL":{
+                                       "lastAccessed":""
+                                         }
+                                        }
+                            
+                            }
+                        
+                        ]
+                    },
+                    {
+                        "@type": "ItemList",
+                        "@id": "ex:instrument2",
+                        "subjectOf": {
+                            "@type": "CreativeWork",
+                            "accountablePerson": "www",
+                            "about":{
+                                   "name":"",
+                                   "description":"",
+                                   "accessibility":""
+                                 },
+                            "position":"",
+                            "license":"",
+                            "temporalCoverage":"",
+                            "version":"",
+                            "inLanguage":"",
+                            "audience":"",
+                            "conditionsOfAccess":"",
+                            "sameAs":"",
+                            "identifier":{
+                                   "@type":"text",
+                                   "DOIRegistry":"",
+                                   "DOIValue":""
+                            },
+                            "URL":{
+                                "lastAccessed":""
+                                }
+                        },
+                        "itemListElement":[
+                            {
+                                "@type": "ListItem",
+                                "item": {
+                                    "@type": "schema:Question",
+                                    "@id": "ex:question1",
+                                    "about":{
+                                        "name":"",
+                                        "description":"",
+                                        "question":{
+                                                "@type":"ListItem",
+                                                "text":"",
+                                                "language":""
+                                        },
+                                
+                                        "accessibility":"",
+                                        "keywords":"",
+                                        "property":{
+                                            "@type":"ListItem",
+                                                "concept":"",
+                                                "vocabulary":""
+                                        }
+                                             },
+                                    "position":"",
+                                    "observation":{
+                                            "@type":"ItemList",
+                                            "time":{
+                                            "@type":"ListItem",
+                                            
+                                              "resultTime":"",
+                                               "phenomenonTime":""
+                                            },
+                                            "result":{
+                                                "@type":"ItemList",
+                                                "valueAsNumber":{
+                                                    "@type":"ItemList",
+                                                    "unitOfMeasurement":"",
+                                                    "vocabulary":"",
+                                                    "number":""
+                                                      },
+                                                "valueAsString":{
+                                                    "@type":"ItemList",
+                                                        "language":"",
+                                                        "string":""
+                                                },
+                                                "valueAsConcept":{
+                                                    "@type":"ItemList",
+                                                        "concept":"",
+                                                        "vocabulary":""   
+                                                }
+                                                    }  
+                                                    },
+                                    "conditionsOfAccess":"",
+                                    "sameAs":"",
+                                    "identifier":{
+                                        "@type":"text",
+                                        "DOI":{
+                                             "checkSum":""
+                                               }
+                                            },
+                                    "URL":{
+                                       "lastAccessed":""
+                                         }
+                                        }
+                            },
+                            {
+                                "@type": "ListItem",
+                                "item": {
+                                    "@type": "schema:Question",
+                                    "@id": "ex:question2",
+                                    "about":{
+                                        "name":"",
+                                        "description":"",
+                                        "@type":"event",
+                                        "question":{
+                                                "@type":"ListItem",
+                                                "text":"",
+                                                "language":""
+                                        },
+                                
+                                        "accessibility":"",
+                                        "keywords":"",
+                                        "property":{
+                                            "@type":"ListItem",
+                                            "concept":"",
+                                            "vocabulary":""
+                                        }
+                                             },
+                                    "position":"",
+                                    "observation":{
+                                            "@type":"ItemList",
+                                            "time":{
+                                            "@type":"ListItem",
+                                            
+                                              "resultTime":"",
+                                               "phenomenonTime":""
+                                            },
+                                            "result":{
+                                                "@type":"ItemList",
+                                                "valueAsNumber":{
+                                                    "@type":"ItemList",
+                                                    "unitOfMeasurement":"",
+                                                    "vocabulary":"",
+                                                    "number":""
+                                                      },
+                                                "valueAsString":{
+                                                    "@type":"ItemList",
+                                                        "language":"",
+                                                        "string":""
+                                                },
+                                                "valueAsConcept":{
+                                                    "@type":"ItemList",
+                                                        "concept":"",
+                                                        "vocabulary":""   
+                                                }
+                                                    }  
+                                                    },
+                                    "conditionsOfAccess":"",
+                                    "sameAs":"",
+                                    "identifier":{
+                                        "@type":"text",
+                                        "DOI":{
+                                             "checkSum":""
+                                               }
+                                            },
+                                    "URL":{
+                                       "lastAccessed":""
+                                         }
+                                        }
+                            
+                            }
+                        
+                        ]
+                    }
+                  ]
+               }
+            ]
+        }
+     }
