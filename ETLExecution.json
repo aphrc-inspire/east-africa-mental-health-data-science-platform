@@ -1,0 +1,37 @@
+{  "@context": [
+    "http://schema.org",
+    {
+        "INSPIRE": "http://aphrc-lshtm-inspire.org/",
+        "DDI-Lifecycle": "https://ddialliance.org/Specification/DDI-Lifecycle/",
+        "sourceToOMOPETLExecution": "DDI-Lifecycle:sourceToOMOPETLExecuction",
+        "softwareSourceCode": "DDI-Lifecycle:softwareSourceCode"
+    }
+  ],
+        "@type": "sourceToOMOPETLExecution",
+      "object": {
+          "@type": "thing",
+          "@id": "",
+          "ddi-l:DataCollection":""
+    },
+      "instrument": {
+          "@type": "thing",
+          "@id": "",
+          "softwareSourceCode":{
+              "@type":"thing",
+              "ETL SQL":"",
+              "URL":""
+            }
+          },
+      "result": {
+          "@type": "thing",
+          "@id": "",
+          "ohdsi:OMOP_CDM":{
+              "@type":"thing",
+              "Exemplary ETL SQL":"",
+              "URL":""
+          }
+      }
+  }
+     
+   
+
