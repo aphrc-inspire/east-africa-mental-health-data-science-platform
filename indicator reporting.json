@@ -1,0 +1,51 @@
+{  "@context": [
+  "http://schema.org",
+  {
+      "INSPIRE": "http://aphrc-lshtm-inspire.org/",
+      "DDI-Lifecycle": "https://ddialliance.org/Specification/DDI-Lifecycle/",
+      "indicatorReporting": "DDI-Lifecycle:indicatorReporting",
+      "targetEntryPoint":"DDI-Lifecycle:targetEntryPoint"
+  }
+],
+        "@type": "indicatorReporting",
+        "object": {
+            "@type":"itemList",
+            "@id": "",
+            "ohdsi:MinimumDisaggregatedMatrix":{
+                "@type":"itemList",
+                "income":"",
+                "Sex":"",
+                "Age":"",
+                "Race":"",
+                "EthnicityMigrationStatusDisability":"",
+                "GeographicalLocation":"",
+                "OtherCharacteristics":""
+                }
+              },
+        "instrument": {
+            "@type": "itemList",
+            "@id": "",
+            "SDMXIndicatorRegistrationToolset":""
+            },
+        "result": {
+            "@type": "itemList",
+            "@id": "",
+            "UpdateINSPIRE-SDMXIndicatorDataWarehouse":""
+            },
+         "targetEntryPoint": {
+            "@type": "itemList",
+            "@id": "",
+            "actionApplication":{
+               "@type": "itemList",
+               "FMRExcelDataCollectionTemplate": ""
+               },
+            "actionPlatform":{
+                "@type": "itemList",
+                "fusionMetadataRegistry(FMR)": ""
+               },  
+            "urlTemplate":{
+                "@type": "itemList",
+                "FMRReportingTemplate": ""
+      }
+    }
+  }

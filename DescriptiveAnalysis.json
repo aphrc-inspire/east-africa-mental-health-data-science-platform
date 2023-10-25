@@ -1,0 +1,55 @@
+{  "@context": [
+    "http://schema.org",
+    {
+        "INSPIRE": "http://aphrc-lshtm-inspire.org/",
+        "DDI-Lifecycle": "https://ddialliance.org/Specification/DDI-Lifecycle/",
+        "descriptiveAnalysis": "DDI-Lifecycle:descriptiveAnalysis"
+    }
+  ],
+          "@type": "descriptiveAnalysis",
+          "object": {
+              "@type": "itemList",
+              "@id": "",
+              "ohdsi:OMOP_CDM":""
+            },
+          "instrument": {
+              "@type": "itemList",
+              "@id": "",
+              "ohdsi:Characterization":{
+                  "@type":"itemList",
+                  "ohdsi:CohortCharacterization":{
+                      "@type":"itemList",
+                      "CohortSelection":"",
+                      "FeatureSelection":"",
+                      "SubgroupCriteria":""
+                  },
+                  "ohdsi:IncidenceRates":{
+                      "@type":"itemList",
+                      "TagertAndOutcomeCohort":"",
+                      "TimeAtRisk":"",
+                      "StratifyCriteria":""
+                  },
+                  "ohdsi:Pathways":{
+                      "@type":"itemList",
+                      "TagertCohorts":"",
+                      "EventCohorts":"",
+                      "AnalysisSettings":""
+                   }
+                },
+                   "URL":""
+            },
+          "result": {
+              "@type":"thing",
+              "@id": "",
+              "ohdsi:MinimumDisaggregatedMatrix":{
+                  "@type":"thing",
+                  "income":"",
+                  "Sex":"",
+                  "Age":"",
+                  "Race":"",
+                  "EthnicityMigrationStatusDisability":"",
+                  "GeographicalLocation":"",
+                  "OtherCharacteristics":""
+               }
+           }
+    }

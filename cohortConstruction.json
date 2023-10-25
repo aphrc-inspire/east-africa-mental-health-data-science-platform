@@ -1,0 +1,37 @@
+{  "@context": [
+  "http://schema.org",
+  {
+      "INSPIRE": "http://aphrc-lshtm-inspire.org/",
+      "DDI-Lifecycle": "https://ddialliance.org/Specification/DDI-Lifecycle/",
+      "sourceToOMOPETLConstruction": "DDI-Lifecycle:sourceToOMOPETLConstruction",
+      "softwareSourceCode": "DDI-Lifecycle:SoftwareSourceCode"
+  }
+],
+        "@type": "cohortConstruction",
+        "object": {
+            "@type": "thing",
+            "@id": "",
+            "ohdsi:OMOP_CDM":""
+          },
+        "instrument": {
+            "@type": "thing",
+            "@id": "",
+            "ohdsi:CohortDefinition":{
+                "@type":"thing",
+                "ohdsi:CohortEntryEvent":"",
+                "ohdsi:CohortInclusionCriteria":"",
+                "ohdsi:CohortExit":"",
+                "URL":""
+             }
+         },
+        "result": {
+            "@type": "thing",
+            "@id": "",
+            "ohdsi:Cohort":{
+                "@type":"thing",
+                "URL":""
+             }
+         }
+  } 
+     
+
