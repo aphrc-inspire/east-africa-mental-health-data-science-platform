@@ -25,13 +25,13 @@
                   },
                   "ohdsi:IncidenceRates":{
                       "@type":"itemList",
-                      "TagertAndOutcomeCohort":"",
+                      "TargetAndOutcomeCohort":"",
                       "TimeAtRisk":"",
                       "StratifyCriteria":""
                   },
                   "ohdsi:Pathways":{
                       "@type":"itemList",
-                      "TagertCohorts":"",
+                      "TargetCohorts":"",
                       "EventCohorts":"",
                       "AnalysisSettings":""
                    }
